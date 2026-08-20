@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --primary:#1b4F72;
+    --accent:#F18F01;
+    --text:#2c3E50;
+    --light:#f4f6f8;
+    --white:#FFFFFF;   
+    --hero-gradient-start:rgb(68, 96, 110);
+    --hero-gradient-end:rgb(217,219,222);
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    font-family:var(--font-main); 
+    color:var(--text);
+    line-height:1.5;
+    background-color: var(--white);
+    
+
+}

@@ -1,0 +1,83 @@
+.project-section {
+  padding: 50px 5%;
+}
+
+.project-filters {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  padding: 10px 20px;
+  border: 2px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background: var(--primary);
+  color: white;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  background-color: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s;
+}
+
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.602);
+}
+
+.project-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-card-body {
+  padding: 25px;
+}
+
+.project-card h3 {
+  margin-bottom: 10px;
+}
+
+.project-card p {
+  margin-bottom: 20px;
+}
+
+.project-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.tag {
+  background: var(--accent);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.85rem;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 10px;
+}

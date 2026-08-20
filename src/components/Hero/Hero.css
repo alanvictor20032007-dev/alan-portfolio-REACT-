@@ -1,0 +1,77 @@
+.hero-section {
+  background: linear-gradient(
+    0deg,
+    var(--primary),
+    var(--hero-gradient-start)
+  );
+  color: var(--white);
+  text-align: center;
+  padding: 100px 5%;
+}
+
+.hero-section h1 {
+  font-size: 50px;
+  margin-bottom: 20px;
+  animation: fadeinup 0.8s ease 0.2s both;
+}
+
+.tagline {
+  animation: fadeinup 0.8s ease 0.4s both;
+}
+
+.hero-button {
+  margin-top: 25px;
+  animation: fadeinup 0.8s ease 0.6s both;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 28px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1em;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background-color: var(--accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--primary);
+  margin-left: 10px;
+}
+
+.btn-secondary:hover {
+  background-color: transparent;
+  border-color: var(--white);
+  color: var(--white);
+}
+
+@keyframes fadeinup {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2rem;
+  }
+}

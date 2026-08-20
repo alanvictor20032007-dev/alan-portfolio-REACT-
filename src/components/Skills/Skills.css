@@ -1,0 +1,26 @@
+.skills-section {
+  padding: 50px 5%;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.skill-item {
+  background: transparent;
+  border: 2px solid var(--primary);
+  border-radius: 12px;
+  text-align: center;
+  padding: 30px 20px;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: all 0.2s;
+}
+
+.skill-item:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.602);
+}

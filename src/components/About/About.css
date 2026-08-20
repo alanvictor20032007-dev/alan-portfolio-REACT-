@@ -1,0 +1,50 @@
+.about-section {
+  text-align: center;
+  padding: 50px 5%;
+}
+
+.about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.profile-figure img {
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+.about-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+section h2 {
+  font-size: 2rem;
+  text-align: center;
+  position: relative;
+  margin-bottom: 35px;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: var(--accent);
+  margin: 12px auto 0;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+}
